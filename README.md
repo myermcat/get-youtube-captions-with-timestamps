@@ -59,6 +59,14 @@ If you get import errors:
 
 This tool requires the video to have captions/transcripts enabled. Not all YouTube videos have transcripts available.
 
+## Live Demo
+
+**Testing URL:** https://get-youtube-captions-with-timestamps.onrender.com
+
+**Note:** This is a demo instance that may go to sleep. For production use, please deploy your own instance.
+
+**Health Check:** https://get-youtube-captions-with-timestamps.onrender.com/health
+
 ## API Usage
 
 ### Deploy to Render
