@@ -38,7 +38,11 @@ def get_transcript():
         })
         
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        import traceback
+        error_traceback = traceback.format_exc()
+        print(f"Error in transcript endpoint: {e}")
+        print(f"Traceback: {error_traceback}")
+        return jsonify({"error": str(e), "traceback": error_traceback}), 500
 
 if __name__ == '__main__':
     # Only for local development
