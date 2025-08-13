@@ -5,6 +5,10 @@ import sys
 import os
 from contextlib import redirect_stdout
 
+# Debug: Print environment variables
+print(f"PORT environment variable: {os.environ.get('PORT', 'NOT SET')}")
+print(f"All environment variables: {dict(os.environ)}")
+
 app = Flask(__name__)
 
 @app.route('/health', methods=['GET'])
